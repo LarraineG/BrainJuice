@@ -4,10 +4,10 @@ $(document).ready(function() {
 
 const $submitButton = $(".submit-post");
 
-const $genreSelect = "DropdownValue"; //VALUE FROM DROPDOWN???
-const $blurbEntry = $(".blurb").value().trim();
-const $authorEntry = $("author").value();
-const $topicSelect = "DropdownValue"; //VALUE FROM DROPDOWN???
+const $genreSelect = (".genre option:selected").text();
+const $blurbEntry = $(".blurb").val().trim();
+const $authorEntry = $(".author").val();
+const $topicSelect = (".topic option:selected").text();
 
 //User selects Genre and topic from seperate dropdowns
 
@@ -23,9 +23,8 @@ $(document).on("click", $submitButton, function(){
 });
 
 function submitPost(inputPost) {
-  var genre = $genreSelect.VALUE;
 
-  $.post("api/genre/" + genre, inputPost, function() {
+  $.post("api/genre/" + $genreSelect, inputPost, function() {
     console.log("you have sucessfully submitted your post");
   });
 
