@@ -13,7 +13,7 @@ module.exports = function (app) {
         let findObj = {};
         if (req.params.topic) {
             findObj.where = {
-                [topic]: req.params.topic
+                topic: req.params.topic
             }
         }
         db[genreTable].findAll(findObj)
