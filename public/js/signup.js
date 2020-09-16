@@ -39,4 +39,19 @@ $(document).ready(() => {
     $("#alert .msg").text(err.responseJSON);
     $("#alert").fadeIn(500);
   }
+  
+//added package ask
+  function getQuotes(){
+    $.get("/api/quotes")
+    .then((data) => {
+      console.log(data);
+
+      $("#inspirational").text(data.insQuote)
+
+      $("#quote").text(data.quote.text + " : " + data.quote.author)
+    })
+  }
+
+    getQuotes()
+;
 });

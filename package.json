@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "npm run lint",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
     "watch": "nodemon server.js"
@@ -21,6 +21,7 @@
     "express-session": "^1.16.1",
     "inspirational-quotes": "^1.0.8",
     "mysql2": "^1.6.5",
+    "nodemon": "^2.0.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^5.8.6"

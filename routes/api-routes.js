@@ -1,45 +1,47 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
-//const passport = require("../config/passport");
+const passport = require("../config/passport");
 
-const { getAll, getRandom } = require('@divyanshu013/inspirational-quotes');
 const Quote = require('inspirational-quotes');
 
-var arr = require('./data.json');
+// const { getAll, getRandom } = require('@divyanshu013/inspirational-quotes');
+// const Quote = require('inspirational-quotes');
 
-var quote={};
+// var arr = require('./data.json');
 
-function randomInt(min,max)
-{
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
+// var quote={};
+
+// function randomInt(min,max)
+// {
+//     return Math.floor(Math.random()*(max-min+1)+min);
+// }
 
 
-module.exports.getRandomQuote = function () { 
-  var index = randomInt(0,324);
-  return arr[index].text;
-};
+// module.exports.getRandomQuote = function () { 
+//   var index = randomInt(0,324);
+//   return arr[index].text;
+// };
 
-module.exports.getQuote = function (name) { 
-  var index = randomInt(0,324);
-  quote.text=arr[index].text;
-  quote.author=arr[index].from;
-  return quote;
-};
+// module.exports.getQuote = function (name) { 
+//   var index = randomInt(0,324);
+//   quote.text=arr[index].text;
+//   quote.author=arr[index].from;
+//   return quote;
+// };
 
-module.exports.getAllQuote = function (name) { 
-  var index = randomInt(0,324);
-  quote.text=arr[index].text;
-  quote.author=arr[index].from;
-  return quote;
-};
+// module.exports.getAllQuote = function (name) { 
+//   var index = randomInt(0,324);
+//   quote.text=arr[index].text;
+//   quote.author=arr[index].from;
+//   return quote;
+// };
 
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
-  app.get("/", function, (req, res) => {
+  app.get("/", function(req, res) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.render({
       
@@ -81,4 +83,18 @@ module.exports = function(app) {
       });
     }
   });
+//added package ask
+  app.get("/api/quotes", (req, res) => {
+    var insQuote = Quote.getRandomQuote();
+
+    var quote = Quote.getQuote();
+
+    res.json({
+      insQuote : insQuote,
+      quote : quote
+    })
+    //console.log(insQuote);
+ 
+    //console.log(quote);
+  })
 };
