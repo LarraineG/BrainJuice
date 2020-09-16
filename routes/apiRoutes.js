@@ -29,8 +29,11 @@ module.exports = function (app) {
         genreTable = req.params.genre;
 
         db[genreTable].create(req.body)
-            .then((result) => {
-                res.json(result);
-            });
+        .then((result) => {
+            res.json(result);
+        })
+        .catch((err)=>{
+            res.json(err);
+        });
     });
 };
