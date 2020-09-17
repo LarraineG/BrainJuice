@@ -1,8 +1,8 @@
 .home-banner {
-  /* background-color: chocolate; */
-  background-color: plum;
-  height: 95vh;
-  position: relative;
+    /* background-color: chocolate; */
+    background-color: plum;
+    height: 95vh;
+    position: relative;
 }
 
 .ml15 {
@@ -52,17 +52,25 @@
 }
 
 /* HOMEPAGE BANNER TRANSITION 2 >> RELAX */
-.ml15.heroSwitch.heroSwitch2 { /* Gets added to the H1 */
+.ml15.heroSwitch2 { /* Gets added to the H1 */
     font-family: 'Shadows Into Light', cursive;
     text-transform: uppercase;
 }
-.home-banner.bannerSwitch.bannerSwitch2 { /* Gets added to the Header  Tag */
-  background-color: #0052b7;
+.home-banner.bannerSwitch2 { /* Gets added to the Header  Tag */
+    background-color: rgba(0, 82, 183, 1);
 }
 
 .quote-banner {
     /* background-color:orange; */
     background-color: turquoise;
+}
+.quote-banner .container {
+  min-height: 1000px !important;
+  padding-bottom: 500px;
+}
+
+body {
+  height: 1400px;
 }
 h3 {
     color:lightgoldenrodyellow;

@@ -16,8 +16,6 @@ $(document).ready(function() {
 
 setTimeout(laugh, 2500);
 
-
-
 function laugh(){
   setTimeout(
     function(){
@@ -56,8 +54,19 @@ function mind(){
   setTimeout(
     function(){
       $(".ml15").text("MIND");
+      $(".home-banner.bannerSwitch.bannerSwitch2").css({"background-color", "#000000"});
+      setTimeout(end, 400);
     }, 0);
 };
+
+
+
+function end(){
+
+};
+
+
+
 
 
 // function fade() {
