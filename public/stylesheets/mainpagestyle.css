@@ -1,8 +1,25 @@
 .home-banner {
     /* background-color: chocolate; */
-    background-color: plum;
+    /* background-color: plum; */
+    background-color: rgba(220, 162, 220, .9);
+    background-blend-mode: multiply;
     height: 95vh;
     position: relative;
+    transition: background .25s linear;
+}
+.home-banner::before {
+  background-image: url("../images/zigzaglines2.jpg");
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: background .5s linear;
+  z-index: -5;
+
 }
 
 .ml15 {
@@ -28,13 +45,16 @@
     /* font-family: 'Changa One', cursive; */
     /* font-family: 'Oleo Script Swash Caps', cursive; */
     /* font-family: 'Faster One', cursive; */
-    font-family: 'Codystar', cursive;
+    /* font-family: 'Codystar', cursive; */
+    font-family: 'Monoton', cursive;
+    font-family: 'Saira Stencil One', cursive;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
 }
 
 /* HOMEPAGE BANNER TRANSITION 1 >> LAUGH */
@@ -48,7 +68,8 @@
     text-transform: initial;
 }
 .home-banner.bannerSwitch { /* Gets added to the Header  Tag */
-  background-color: #e2b915;
+  /* background-color: #e2b915; */
+  background-color: rgba(226, 185, 21, .9);
 }
 
 /* HOMEPAGE BANNER TRANSITION 2 >> RELAX */
@@ -57,7 +78,7 @@
     text-transform: uppercase;
 }
 .home-banner.bannerSwitch2 { /* Gets added to the Header  Tag */
-    background-color: rgba(0, 82, 183, 1);
+    background-color: rgba(0, 82, 183, .9);
 }
 
 .quote-banner {
@@ -70,7 +91,7 @@
 }
 
 body {
-  height: 1400px;
+  height: 1800px;
 }
 h3 {
     color:lightgoldenrodyellow;
@@ -167,7 +188,7 @@ h2 {
     width: 25%;
     /* background-color: darkorange;  */
     background-color: darkorchid;
-    color: lightgoldenrodyellow; 
+    color: lightgoldenrodyellow;
     transition-duration: 0.4s;
     border:none;
 }

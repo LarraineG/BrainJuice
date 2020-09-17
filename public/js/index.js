@@ -69,16 +69,31 @@ function mind(){
   setTimeout(
     function(){
       $(".ml15").text("Mind");
-      // setTimeout(fade, 600);
+      setTimeout(fade, 600);
     }, 0);
 };
 
-// function fade(){
-//   setTimeout(
-//     function(){
-//       $(".ml15").text("");
-//       $(".home-banner.bannerSwitch.bannerSwitch2").css("background-color", "rgba(0, 82, 183, .5)");
-//     }, 0);
-// };
+function fade(){
+  setTimeout(
+    function(){
+      $(".ml15").text("");
+      $(".home-banner.bannerSwitch.bannerSwitch2").css({"background-color": "rgba(0, 82, 183, .5)", "transition": "background 1s linear"});
+      $('html, body').animate({
+          scrollTop: ($('.quote-banner').offset().top)
+      },500);
+    }, 0);
+};
 
 });
+
+
+/*
+
+
+$('html, body').animate({
+    scrollTop: ($('#element').offset().top)
+},500);
+
+
+
+*/
