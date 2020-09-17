@@ -1,21 +1,20 @@
-{
+
+require('dotenv').config();
+module.exports = {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "password",
-=======
-    "password": "process.env.DB_PASSWORD",
->>>>>>> 47838c18fe3c5a80b1b1c9242c1fd0008711346e
+    "password": process.env.DB_PASSWORD,
     "database": "project_two",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "database": "testdb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",

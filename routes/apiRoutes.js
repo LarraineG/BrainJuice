@@ -1,4 +1,7 @@
 const db = require("../models");
+//added package
+const Quote = require('inspirational-quotes');
+
 // const passport = require("../config/");
 
 module.exports = function (app) {
@@ -36,4 +39,14 @@ module.exports = function (app) {
             res.json(err);
         });
     });
+
+    app.get("/api/quotes", function(req, res){
+        var quote = Quote.getQuote();
+        //console.log(quote);
+        res.json(quote);
+    })
+ 
+
+ 
+
 };
