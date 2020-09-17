@@ -1,28 +1,34 @@
 .home-banner {
-    /* background-color: chocolate; */
-    background-color: plum;
-    height: 95vh;
-    position: relative;
-  }
-.bannerSwitch {
-background-color: #e2b915;
+  /* background-color: chocolate; */
+  background-color: plum;
+  height: 95vh;
+  position: relative;
 }
+
 .ml15 {
     font-weight: 800;
-    font-size: 5em;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-  }
-  .ml15 .word {
+    font-size: 7em;
+    letter-spacing: 0.25em;
+}
+.firstline {
+    font-size: 130%;
+}
+.ml15 .word {
     display: inline-block;
     line-height: 1.5em;
-  }
-  .home-banner h1 {
+}
+.home-banner h1 {
     text-align: center;
     color: lightgoldenrodyellow;
     text-shadow: 4px 4px 4px rgba(89, 1, 92, .25);
     /* font-family: 'Tangerine', serif; */
-    /* font-size: 80px; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Bangers', cursive; */
+    /* font-family: 'Knewave', cursive; */
+    /* font-family: 'Changa One', cursive; */
+    /* font-family: 'Oleo Script Swash Caps', cursive; */
+    /* font-family: 'Faster One', cursive; */
+    font-family: 'Codystar', cursive;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -30,13 +36,33 @@ background-color: #e2b915;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.heroSwitch {
+
+/* HOMEPAGE BANNER TRANSITION 1 >> LAUGH */
+.ml15.heroSwitch { /* Gets added to the H1 */
     font-size: 12em;
     letter-spacing: .25em;
-  }
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    /* font-family: 'Tangerine', serif; */
+    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster Two', cursive; */
+    text-transform: initial;
+}
+.home-banner.bannerSwitch { /* Gets added to the Header  Tag */
+  background-color: #e2b915;
+}
+
+/* HOMEPAGE BANNER TRANSITION 2 >> RELAX */
+.ml15.heroSwitch.heroSwitch2 { /* Gets added to the H1 */
+    font-family: 'Shadows Into Light', cursive;
+    text-transform: uppercase;
+}
+.home-banner.bannerSwitch.bannerSwitch2 { /* Gets added to the Header  Tag */
+  background-color: #0052b7;
+}
+
 .quote-banner {
     /* background-color:orange; */
-    background-color:turquoise
+    background-color: turquoise;
 }
 h3 {
     color:lightgoldenrodyellow;
@@ -70,7 +96,7 @@ button {
     left:15%;
     /* background-color: darkorange;  */
     background-color: darkorchid;
-    color: lightgoldenrodyellow; 
+    color: lightgoldenrodyellow;
     transition-duration: 0.4s;
     border:none;
 }
