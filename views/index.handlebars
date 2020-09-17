@@ -1,10 +1,18 @@
-<div class="bingus">
-    <h1 class="head">Get Inspired</h1>
+<!-- MainPage Custom JavaScript (COULD NOT GET TO LINK)-->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="/layouts/index.js"></script> -->
+
+<header class="home-banner">
+    <h1 class="ml15">
+        <span class="word firstline">Get</span>
+        <span class="word">Inspired</span>
+    </h1>
+    <!-- <h1 class="head">Get Inspired</h1> -->
+</header>
+<div class="quote-banner">
+    <h3 class="quote">"Trashh economy. You use cubes of trash as money. Everybody becomes rich, it’s a gold rush."</h3>
 </div>
-<div class="dingus">
-    <h3 class="quote">"Trash economy. You use cubes of trash as money. Everybody becomes rich, it’s a gold rush."</h3>
-</div>
-<div class="container">
+<section class="container">
     <h2>Pick a Theme</h2>
 
     <div class="row">
@@ -30,4 +38,87 @@
             </button>
         </div>
     </div>
-</div>
+</section>
+
+
+<script>
+
+    var $homeBanner = $(".home-banner");
+    var $ml15 = $(".ml15"); //home-banner h1
+
+    $(document).ready(function() {
+
+      anime.timeline({loop: false})
+        .add({
+          targets: '.ml15 .word',
+          scale: [14,1.25],
+          opacity: [0,1],
+          easing: "easeOutCirc",
+          duration: 800,
+          delay: (el, i) => 800 * i
+        });
+
+    setTimeout(laugh, 2500);
+
+    function laugh(){
+      setTimeout(
+        function(){
+          $(".ml15").addClass("heroSwitch");
+          $(".home-banner").addClass("bannerSwitch");
+          $(".ml15").text("Laugh");
+          setTimeout(listen, 500);
+        }, 0);
+    };
+
+    function listen(){
+      setTimeout(
+        function(){
+          $(".ml15").text("Listen");
+          setTimeout(relax, 500);
+        }, 0);
+    };
+
+    function relax(){
+      setTimeout(
+        function(){
+          $(".ml15").addClass("heroSwitch2");
+          $(".home-banner").addClass("bannerSwitch2");
+          $(".ml15").text("Relax");
+          setTimeout(your, 400);
+        }, 0);
+    };
+
+    function your(){
+      setTimeout(
+        function(){
+          $(".ml15").text("Your");
+          setTimeout(mind, 400);
+        }, 0);
+    };
+
+    // function mind(){
+    //   setTimeout(
+    //     function(){
+    //       $(".ml15").text("Mind");
+    //     }, 0);
+    // };
+
+    function mind(){
+      setTimeout(
+        function(){
+          $(".ml15").text("Mind");
+          // setTimeout(fade, 600);
+        }, 0);
+    };
+
+    // function fade(){
+    //   setTimeout(
+    //     function(){
+    //       $(".ml15").text("");
+    //       $(".home-banner.bannerSwitch.bannerSwitch2").css("background-color", "rgba(0, 82, 183, .5)");
+    //     }, 0);
+    // };
+
+
+    });
+</script>

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 const db = require('../models');
+=======
+const db = require("../models");
+//added package
+const Quote = require('inspirational-quotes');
+
+>>>>>>> bc325ea043b0e3474d4f0e1f55b2b32a8082fdef
 // const passport = require("../config/");
 
 module.exports = (app) => {
@@ -27,6 +34,7 @@ module.exports = (app) => {
       });
   });
 
+<<<<<<< HEAD
   app.get('/genre/:genre/:topic?', (req, res) => {
     const genreTable = req.params.genre;
     const findObj = {};
@@ -55,4 +63,24 @@ module.exports = (app) => {
         res.json(err);
       });
   });
+=======
+        db[genreTable].create(req.body)
+        .then((result) => {
+            res.json(result);
+        })
+        .catch((err)=>{
+            res.json(err);
+        });
+    });
+
+    app.get("/api/quotes", function(req, res){
+        var quote = Quote.getQuote();
+        //console.log(quote);
+        res.json(quote);
+    })
+ 
+
+ 
+
+>>>>>>> bc325ea043b0e3474d4f0e1f55b2b32a8082fdef
 };

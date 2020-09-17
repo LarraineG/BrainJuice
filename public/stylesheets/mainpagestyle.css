@@ -1,14 +1,78 @@
-.bingus{
+.home-banner {
     /* background-color: chocolate; */
-    background-color:plum;
-    height: 300px;
+    background-color: plum;
+    height: 95vh;
     position: relative;
 }
-.dingus{
-    /* background-color:orange; */
-    background-color:turquoise
+
+.ml15 {
+    font-weight: 800;
+    font-size: 7em;
+    letter-spacing: 0.25em;
 }
-h3{
+.firstline {
+    font-size: 130%;
+}
+.ml15 .word {
+    display: inline-block;
+    line-height: 1.5em;
+}
+.home-banner h1 {
+    text-align: center;
+    color: lightgoldenrodyellow;
+    text-shadow: 4px 4px 4px rgba(89, 1, 92, .25);
+    /* font-family: 'Tangerine', serif; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Bangers', cursive; */
+    /* font-family: 'Knewave', cursive; */
+    /* font-family: 'Changa One', cursive; */
+    /* font-family: 'Oleo Script Swash Caps', cursive; */
+    /* font-family: 'Faster One', cursive; */
+    font-family: 'Codystar', cursive;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* HOMEPAGE BANNER TRANSITION 1 >> LAUGH */
+.ml15.heroSwitch { /* Gets added to the H1 */
+    font-size: 12em;
+    letter-spacing: .25em;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    /* font-family: 'Tangerine', serif; */
+    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster Two', cursive; */
+    text-transform: initial;
+}
+.home-banner.bannerSwitch { /* Gets added to the Header  Tag */
+  background-color: #e2b915;
+}
+
+/* HOMEPAGE BANNER TRANSITION 2 >> RELAX */
+.ml15.heroSwitch2 { /* Gets added to the H1 */
+    font-family: 'Shadows Into Light', cursive;
+    text-transform: uppercase;
+}
+.home-banner.bannerSwitch2 { /* Gets added to the Header  Tag */
+    background-color: rgba(0, 82, 183, 1);
+}
+
+.quote-banner {
+    /* background-color:orange; */
+    background-color: turquoise;
+}
+.quote-banner .container {
+  min-height: 1000px !important;
+  padding-bottom: 500px;
+}
+
+body {
+  height: 1400px;
+}
+h3 {
     color:lightgoldenrodyellow;
     text-align:center;
     font-family: "Times New Roman", Times, serif;
@@ -16,7 +80,7 @@ h3{
     padding-top:30px;
     padding-bottom:30px;
 }
-.head{
+.head {
     text-align: center;
     color:lightgoldenrodyellow;
     text-shadow: 4px 4px 4px rgb(89, 1, 92);
@@ -29,10 +93,10 @@ h3{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-body{
+body {
     background-color: rgb(247, 247, 126);
 }
-button{
+button {
     position:absolute;
     text-align:center;
     padding:10px;
@@ -40,11 +104,11 @@ button{
     left:15%;
     /* background-color: darkorange;  */
     background-color: darkorchid;
-    color: lightgoldenrodyellow; 
+    color: lightgoldenrodyellow;
     transition-duration: 0.4s;
     border:none;
 }
-button:hover{
+button:hover {
     /* background-color:darkred; */
     background-color: darkmagenta;
     transform:scale(1.2);
@@ -52,10 +116,10 @@ button:hover{
     width:75%;
     left:12.5%; */
 }
-.row{
+.row {
     margin-top:60px;
 }
-h2{
+h2 {
     margin-top:40px;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
