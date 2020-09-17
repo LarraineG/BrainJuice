@@ -1,0 +1,109 @@
+.bingus{
+    /* background-color: chocolate; */
+    background-color:plum;
+    height: 300px;
+    position: relative;
+}
+.dingus{
+    /* background-color:orange; */
+    background-color:turquoise
+}
+h3{
+    color:lightgoldenrodyellow;
+    text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    font-style:italic;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.head{
+    text-align: center;
+    color:lightgoldenrodyellow;
+    text-shadow: 4px 4px 4px rgb(89, 1, 92);
+    font-family: 'Tangerine', serif;
+    font-size: 80px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+body{
+    background-color: rgb(247, 247, 126);
+}
+.pipe{
+    position:absolute;
+    text-align:center;
+    padding:10px;
+    width: 70%;
+    left:15%;
+    /* background-color: darkorange;  */
+    background-color: darkorchid;
+    color: lightgoldenrodyellow; 
+    transition-duration: 0.4s;
+    border:none;
+}
+.pipe:hover{
+    /* background-color:darkred; */
+    background-color: darkmagenta;
+    transform:scale(1.2);
+    /* padding:20px;
+    width:75%;
+    left:12.5%; */
+}
+.row{
+    margin-top:60px;
+}
+h2{
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    white-space: space pre;
+}
+.motivate{
+    height: 300px;
+    position: relative;
+    background-image: url(https://i1.wp.com/www.society19.com/wp-content/uploads/2020/06/10-Inspirational-Quotes-That-Will-Give-You-The-Motivation-You-Need-Featured-Image.png?fit=1024%2C768&ssl=1);
+}
+.motivate-panel{
+    padding: 25px;
+    min-height: 300px;
+}
+.no-margin{
+    margin:0px;
+}
+.mp1{
+    background-color:turquoise;
+}
+.mp2{
+    background-image:url(https://pbs.twimg.com/profile_images/770758699027750912/Nt4EDtW8.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.mp3{
+    background-color: violet;
+}
+.mp4{
+    background-color: lightgreen;
+}
+.picktheme{
+    margin-top:40px;
+}
+.mptext{
+    margin:0;
+}
+.center{
+    text-align: left;
+    margin: auto;
+    display: table;}
+.submit{
+    position:absolute;
+    text-align:center;
+    padding:10px;
+    width: 25%;
+    /* background-color: darkorange;  */
+    background-color: darkorchid;
+    color: lightgoldenrodyellow; 
+    transition-duration: 0.4s;
+    border:none;
+}
