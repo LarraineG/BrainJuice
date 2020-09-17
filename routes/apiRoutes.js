@@ -1,6 +1,6 @@
+const Quote = require('inspirational-quotes');
 const db = require("../models");
 // added package
-const Quote = require('inspirational-quotes');
 
 // const passport = require("../config/");
 
@@ -12,7 +12,7 @@ module.exports = (app) => {
   app.get('/motivate', (req, res) => {
     db.Motivate.findAll({})
       .then((result) => {
-        res.render('motivation');
+        res.render('motivation', { data: result });
       });
   });
 
@@ -63,7 +63,5 @@ module.exports = (app) => {
     const quote = Quote.getQuote();
     // console.log(quote);
     res.json(quote);
-  })
-
-
+  });
 };

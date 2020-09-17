@@ -1,33 +1,31 @@
 $(document).ready(() => {
-// // POST Request to backend for new post
+// POST Request to backend for new post
 
   // const $submitButton = $(".submit-post");
 
-  // const $genreSelect = (".genre option:selected").text();
+  // const $genreSelect = $(".genre option:selected").text();
   // const $blurbEntry = $(".blurb").val().trim();
   // const $authorEntry = $(".author").val();
-  // const $topicSelect = (".topic option:selected").text();
+  // const $topicSelect = $(".topic option:selected").text();
 
   // // User selects Genre and topic from seperate dropdowns
 
-  //   var newPost = {
-  //     blurb: $blurbEntry,
-  //     author: $authorEntry,
-  //     // joke, quote, advice
-  //     topic: $topicSelect
-  //   }
+  // const newPost = {
+  //   blurb: $blurbEntry,
+  //   author: $authorEntry,
+  //   // joke, quote, advice
+  //   topic: $topicSelect,
+  // };
 
-  // $(document).on("click", $submitButton, function(){
+  // $(document).on("click", $submitButton, () => {
   //   submitPost(newPost);
   // });
 
   // function submitPost(inputPost) {
-
-  //   $.post("api/genre/" + $genreSelect, inputPost, function() {
+  //   $.post(`api/genre/${$genreSelect}`, inputPost, () => {
   //     console.log("you have sucessfully submitted your post");
   //   });
-
-  // };
+  // }
 
   $("#motivateBtn").on("click", (event) => {
     console.log("This motivate button is working.");
