@@ -96,7 +96,7 @@ h3 {
 body {
     background-color: rgb(247, 247, 126);
 }
-button {
+.pipe {
     position:absolute;
     text-align:center;
     padding:10px;
@@ -108,7 +108,7 @@ button {
     transition-duration: 0.4s;
     border:none;
 }
-button:hover {
+.pipe:hover {
     /* background-color:darkred; */
     background-color: darkmagenta;
     transform:scale(1.2);
@@ -123,4 +123,51 @@ h2 {
     margin-top:40px;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
+}
+.motivate{
+    height: 300px;
+    position: relative;
+    background-image: url(https://i1.wp.com/www.society19.com/wp-content/uploads/2020/06/10-Inspirational-Quotes-That-Will-Give-You-The-Motivation-You-Need-Featured-Image.png?fit=1024%2C768&ssl=1);
+}
+.motivate-panel{
+    padding: 25px;
+    min-height: 300px;
+}
+.no-margin{
+    margin:0px;
+}
+.mp1{
+    background-color:turquoise;
+}
+.mp2{
+    background-image:url(https://pbs.twimg.com/profile_images/770758699027750912/Nt4EDtW8.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.mp3{
+    background-color: violet;
+}
+.mp4{
+    background-color: lightgreen;
+}
+.picktheme{
+    margin-top:40px;
+}
+.mptext{
+    margin:0;
+}
+.center{
+    text-align: left;
+    margin: auto;
+    display: table;}
+.submit{
+    position:absolute;
+    text-align:center;
+    padding:10px;
+    width: 25%;
+    /* background-color: darkorange;  */
+    background-color: darkorchid;
+    color: lightgoldenrodyellow; 
+    transition-duration: 0.4s;
+    border:none;
 }
