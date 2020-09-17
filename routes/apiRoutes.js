@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+const db = require("../models");
+// added package
+>>>>>>> 27dfd2283180d6870928a79c9eb54d9b8d603503
 const Quote = require('inspirational-quotes');
 const db = require("../models");
 // added package
@@ -12,7 +17,7 @@ module.exports = (app) => {
   app.get('/motivate', (req, res) => {
     db.Motivate.findAll({})
       .then((result) => {
-        res.render('motivate', { data: result });
+        res.render('motivation');
       });
   });
 
