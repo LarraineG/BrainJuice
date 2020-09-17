@@ -1,52 +1,69 @@
 const db = require("../models");
-//added package
+// added package
 const Quote = require('inspirational-quotes');
 
 // const passport = require("../config/");
 
-module.exports = function (app) {
+module.exports = (app) => {
+  app.get('/', (req, res) => {
+    res.render('index');
+  });
 
-    app.get("/", function (req, res) {
-        res.render("index");
-    });
+  app.get('/motivate', (req, res) => {
+    db.Motivate.findAll({})
+      .then((result) => {
+        res.render('motivation');
+      });
+  });
 
-    app.get("/genre/:genre/:topic?", function (req, res) {
-        console.log(req.params);
-        let genreTable = req.params.genre;
-        let findObj = {};
-        if (req.params.topic) {
-            findObj.where = {
-                topic: req.params.topic
-            }
-        }
-        db[genreTable].findAll(findObj)
-        .then((result) => {
-            res.json(result);
-        })
-        .catch(err=>{
-            res.json(err);
-        });
-    });
+  app.get('/humor', (req, res) => {
+    db.Humor.findAll({})
+      .then((result) => {
+        res.render('humor', { data: result });
+      });
+  });
 
-    app.post("/api/:genre", function (req, res) {
-        genreTable = req.params.genre;
+  app.get('/surprise', (req, res) => {
+    db.Surprise.findAll({})
+      .then((result) => {
+        res.render('surprise', { data: result });
+      });
+  });
 
-        db[genreTable].create(req.body)
-        .then((result) => {
-            res.json(result);
-        })
-        .catch((err)=>{
-            res.json(err);
-        });
-    });
+  app.get('/genre/:genre/:topic?', (req, res) => {
+    const genreTable = req.params.genre;
+    const findObj = {};
+    if (req.params.topic) {
+      findObj.where = {
+        topic: req.params.topic,
+      };
+    }
+    db[genreTable].findAll(findObj)
+      .then((result) => {
+        res.json(result);
+      })
+      .catch((err) => {
+        res.json(err);
+      });
+  });
 
-    app.get("/api/quotes", function(req, res){
-        var quote = Quote.getQuote();
-        //console.log(quote);
-        res.json(quote);
-    })
- 
+  app.post('/api/:genre', (req, res) => {
+    const genreTable = req.params.genre;
 
- 
+    db[genreTable].create(req.body)
+      .then((result) => {
+        res.json(result);
+      })
+      .catch((err) => {
+        res.json(err);
+      });
+  });
+
+  app.get("/api/quotes", (req, res) => {
+    const quote = Quote.getQuote();
+    // console.log(quote);
+    res.json(quote);
+  })
+
 
 };

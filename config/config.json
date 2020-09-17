@@ -1,11 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "password",
-=======
-    "password": "process.env.DB_PASSWORD",
->>>>>>> 47838c18fe3c5a80b1b1c9242c1fd0008711346e
+    "password": "Nbakert1!",
     "database": "project_two",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -18,7 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL",
+    "use_env_variable": null,
     "dialect": "mysql"
   }
 }

@@ -6,9 +6,8 @@ function getQuotes(){
 
       var quoteBlock = `"${data.text}" - ${data.author}`
 
-      $("#quote").text(quoteBlock)
+      $(".quote").text(quoteBlock)
     })
 }
 
 getQuotes()
-
