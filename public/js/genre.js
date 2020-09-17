@@ -9,7 +9,7 @@ const $blurbEntry = $(".blurb").val().trim();
 const $authorEntry = $(".author").val();
 const $topicSelect = (".topic option:selected").text();
 
-//User selects Genre and topic from seperate dropdowns
+// User selects Genre and topic from seperate dropdowns
 
   var newPost = {
     blurb: $blurbEntry,
@@ -29,5 +29,26 @@ function submitPost(inputPost) {
   });
 
 };
+
+$("#motivateBtn").on("click", (event)=>{
+  console.log("This motivate button is working.")
+  $.get("/motivate", function(data){
+    console.log("Motivate Success!")
+  });
+});
+
+$("#humorBtn").on("click", (event)=>{
+  console.log("This humor button is working.")
+  $.get("/humor", function(data){
+    console.log("Humor Success!")
+  });
+});
+
+$("#surpriseBtn").on("click", (event)=>{
+  console.log("This surprise button is working.")
+  $.get("/surprise", function(data){
+    console.log("Surprise Success!")
+  });
+});
 
 });
