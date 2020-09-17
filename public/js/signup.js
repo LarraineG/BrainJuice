@@ -39,20 +39,4 @@ $(document).ready(() => {
     $("#alert .msg").text(err.responseJSON);
     $("#alert").fadeIn(500);
   }
-  
-//added random quote package ask
-  function getQuotes(){
-    $.get("/api/quotes")
-    .then((data) => {
-      console.log(data);
-
-      $("#inspirational").text(data.insQuote)
-      //use one with quote and author
-
-      $("#quote").text(data.quote.text + " : " + data.quote.author)
-    })
-  }
-
-    getQuotes()
-;
 });
