@@ -33,7 +33,7 @@ $(document).ready(() => {
     console.log("This motivate button is working.");
     $.get("/motivate", () => {
       console.log("Motivate Success!");
-      location.reload();
+      location.assign("/motivate");
     });
   });
 
