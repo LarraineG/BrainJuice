@@ -6,8 +6,10 @@
     height: 95vh;
     position: relative;
     transition: background .25s linear;
+
 }
 .home-banner::before {
+  left: 0;
   background-image: url("../images/zigzaglines2.jpg");
   position: absolute;
   content: "";
@@ -20,6 +22,31 @@
   transition: background .5s linear;
   z-index: -5;
 
+}
+
+.brain-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.brain-text {
+  width: 100%;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 50pt;
+  text-align: center;
+}
+.brain {
+  max-width: 125px;
+}
+
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 .ml15 {

@@ -78,22 +78,55 @@ function fade(){
     function(){
       $(".ml15").text("");
       $(".home-banner.bannerSwitch.bannerSwitch2").css({"background-color": "rgba(0, 82, 183, .5)", "transition": "background 1s linear"});
+      setTimeout(showBrain, 300);
+    }, 0);
+};
+
+function showBrain(){
+  setTimeout(
+    function(){
+      var url = '../images/brain2.png';
+      $(`<div class="brain-div">
+      <div class="brain-text">Brain Juice</div>
+      <img src='${url}' class='brain'></div>`).appendTo('.home-banner');
+      setTimeout(scroll, 1000);
+    }, 0);
+};
+
+function scroll(){
+  setTimeout(
+    function(){
       $('html, body').animate({
           scrollTop: ($('.quote-banner').offset().top)
       },500);
     }, 0);
 };
 
+
 });
+
+
+
+
+
 
 
 /*
 
+var url = '../images/brain2.png';
+$(document).ready(function() {
+  var image = new Image();
+  image.src = url;
+  $('.home-banner').append(image);
+});
 
 $('html, body').animate({
     scrollTop: ($('#element').offset().top)
 },500);
 
+$('html, body').animate({
+    scrollTop: ($('.quote-banner').offset().top)
+},500);
 
 
 */
