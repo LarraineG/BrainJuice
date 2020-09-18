@@ -56,7 +56,19 @@ VALUES ("We have nothing to fear but fear itself.", "Unknown", "Inspiration"),
 (“There should be sympathy cards for having to go back to work after vacation.”, "Unknown", "Joke"),
 (“People hustling to be seen, I’m hustling to disappear.”, "Unknown", "Joke"),
 (“Underestimate me. That’ll be fun.”, "Unknown", "Joke"),
-(“It costs $0.00 to be a decent human being.”, "Unknown", "Joke"),
+(“It costs $0.00 to be a decent human being.”, "Unknown", "Joke");
 
 
 
+
+INSERT INTO humors(blurb, topic) 
+VALUES("Just open another credit card; it’s free money.","Listen"),
+("If you see a bear and don’t have time to run away, hug it. Bears cannot scratch their stomachs.","Listen"),
+("Trust me. You can dance.","Listen"),
+("You can scoop icecream easier if you microwave the spoon first.","Listen"),
+("Women love when you ask about their weight. They like to know you care about their health","Listen"),
+("Tell her to calm down. She'll usually understand she was overreacting.","Listen"),
+("Imitate a foreign person's accent when you talk to them so they feel more at home.","Listen"),
+("During an interview always ask about their sexual harrassment policy. It lets them know you're socially conscious.","Listen"),
+("If you commit a felony, you'll never get jury duty again.","Listen"),
+("Put oil on your rotors so your breaks dont stick in the winter.","Listen");
