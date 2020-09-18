@@ -12,7 +12,7 @@ module.exports = (app) => {
   app.get('/motivate', (req, res) => {
     db.Motivate.findAll({})
       .then((result) => {
-        res.render('motivation', { data: result });
+        res.render('motivation');
       });
   });
 
@@ -49,7 +49,6 @@ module.exports = (app) => {
 
   app.post('/api/:genre', (req, res) => {
     const genreTable = req.params.genre;
-    console.log(req.params.genre);
 
     db[genreTable].create(req.body)
       .then((result) => {

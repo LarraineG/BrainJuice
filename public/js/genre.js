@@ -1,69 +1,48 @@
 $(document).ready(() => {
-// POST Request to backend for new post
+  $("#motivateBtn").on("click", (event) => {
+    console.log("This motivate button is working.");
+    $.get("/motivate")
+      .then((data) => {
+        console.log("Motivate Success!");
+        location.assign("/motivate");
+      });
+  });
 
-  // const $submitButton = $(".submit-post");
+  $("#humorBtn").on("click", (event) => {
+    console.log("This humor button is working.");
+    $.get("/humor")
+      .then((data) => {
+        console.log("Humor Success!");
+        location.assign("/humor");
+      });
+  });
 
-  // const $genreSelect = $(".genre option:selected").text();
-  // const $blurbEntry = $(".blurb").val().trim();
-  // const $authorEntry = $(".author").val();
-  // const $topicSelect = $(".topic option:selected").text();
-
-  // // User selects Genre and topic from seperate dropdowns
-
-  // const newPost = {
-  //   blurb: $blurbEntry,
-  //   author: $authorEntry,
-  //   // joke, quote, advice
-  //   topic: $topicSelect,
-  // };
-
-  // $(document).on("click", $submitButton, () => {
-  //   submitPost(newPost);
-  // });
-
-  // function submitPost(inputPost) {
-  //   $.post(`api/genre/${$genreSelect}`, inputPost, () => {
-  //     console.log("you have sucessfully submitted your post");
-  //   });
-  // }
+  $("#surpriseBtn").on("click", (event) => {
+    console.log("This surprise button is working.");
+    $.get("/surprise")
+      .then((data) => {
+        console.log("Surprise Success!");
+        location.assign("/surprise");
+      });
+  });
 
   $("#subBtn").on("click", (event) => {
+    event.preventDefault();
+    console.log("Submit Button Working");
     const newBlurb = {
       blurb: $("#blurbEntry").val().trim(),
-      author: $("authorEntry").val().trim(),
-      topic: $("topicSelect").val(),
+      author: $("#authorEntry").val().trim(),
+      topic: $("#topicSelect").val().trim(),
     };
-    const genreSelect = $("genreSelect").val();
+    const genreSelect = $("#genreSelect").val();
+
     $.ajax(`/api/${genreSelect}`, {
       type: "POST",
       data: newBlurb,
     }).then(
       () => {
         console.log("created new entry");
-        location.reload();
       },
     );
-  });
-
-  $("#motivateBtn").on("click", (event) => {
-    console.log("This motivate button is working.");
-    $.get("/motivate", () => {
-      console.log("Motivate Success!");
-      location.assign("/motivate");
-    });
-  });
-
-  $("#humorBtn").on("click", (event) => {
-    console.log("This humor button is working.");
-    $.get("/humor", (data) => {
-      console.log("Humor Success!");
-    });
-  });
-
-  $("#surpriseBtn").on("click", (event) => {
-    console.log("This surprise button is working.");
-    $.get("/surprise", (data) => {
-      console.log("Surprise Success!");
-    });
   });
 });
