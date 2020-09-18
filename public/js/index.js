@@ -104,29 +104,3 @@ function scroll(){
 
 
 });
-
-
-
-
-
-
-
-/*
-
-var url = '../images/brain2.png';
-$(document).ready(function() {
-  var image = new Image();
-  image.src = url;
-  $('.home-banner').append(image);
-});
-
-$('html, body').animate({
-    scrollTop: ($('#element').offset().top)
-},500);
-
-$('html, body').animate({
-    scrollTop: ($('.quote-banner').offset().top)
-},500);
-
-
-*/

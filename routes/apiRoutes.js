@@ -10,24 +10,15 @@ module.exports = (app) => {
   });
 
   app.get('/motivate', (req, res) => {
-    db.Motivate.findAll({})
-      .then((result) => {
-        res.render('motivation');
-      });
+    res.render('motivation');
   });
 
   app.get('/humor', (req, res) => {
-    db.Humor.findAll({})
-      .then((result) => {
-        res.render('humor', { data: result });
-      });
+    res.render('humor');
   });
 
   app.get('/surprise', (req, res) => {
-    db.Surprise.findAll({})
-      .then((result) => {
-        res.render('surprise', { data: result });
-      });
+    res.render('surprise');
   });
 
   app.get('/genre/:genre/:topic?', (req, res) => {
