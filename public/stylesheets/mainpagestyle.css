@@ -117,9 +117,14 @@
   padding-bottom: 500px;
 }
 
-body {
+.home body {
   height: 1800px;
 }
+
+body {
+  padding-bottom: 200px;
+}
+
 h3 {
     color:lightgoldenrodyellow;
     text-align:center;
