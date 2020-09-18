@@ -12,7 +12,6 @@ module.exports = (app) => {
   app.get('/motivate', (req, res) => {
     db.Motivate.findAll({})
       .then((result) => {
-        console.log(result);
         res.render('motivation', { data: result });
       });
   });
@@ -50,9 +49,11 @@ module.exports = (app) => {
 
   app.post('/api/:genre', (req, res) => {
     const genreTable = req.params.genre;
+    console.log(req.params.genre);
 
     db[genreTable].create(req.body)
       .then((result) => {
+        console.log(result);
         res.json(result);
       })
       .catch((err) => {

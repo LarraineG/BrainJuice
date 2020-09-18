@@ -1,8 +1,51 @@
 .home-banner {
     /* background-color: chocolate; */
-    background-color: plum;
+    /* background-color: plum; */
+    background-color: rgba(220, 162, 220, .9);
+    background-blend-mode: multiply;
     height: 95vh;
     position: relative;
+    transition: background .25s linear;
+}
+
+.home-banner::before {
+  left: 0;
+  background-image: url("../images/zigzaglines2.jpg");
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: background .5s linear;
+  z-index: -5;
+}
+
+.brain-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.brain-text {
+  width: 100%;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 50pt;
+  text-align: center;
+}
+.brain {
+  max-width: 125px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 .ml15 {
@@ -28,13 +71,16 @@
     /* font-family: 'Changa One', cursive; */
     /* font-family: 'Oleo Script Swash Caps', cursive; */
     /* font-family: 'Faster One', cursive; */
-    font-family: 'Codystar', cursive;
+    /* font-family: 'Codystar', cursive; */
+    font-family: 'Monoton', cursive;
+    font-family: 'Saira Stencil One', cursive;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
 }
 
 /* HOMEPAGE BANNER TRANSITION 1 >> LAUGH */
@@ -48,7 +94,8 @@
     text-transform: initial;
 }
 .home-banner.bannerSwitch { /* Gets added to the Header  Tag */
-  background-color: #e2b915;
+  /* background-color: #e2b915; */
+  background-color: rgba(226, 185, 21, .9);
 }
 
 /* HOMEPAGE BANNER TRANSITION 2 >> RELAX */
@@ -57,7 +104,7 @@
     text-transform: uppercase;
 }
 .home-banner.bannerSwitch2 { /* Gets added to the Header  Tag */
-    background-color: rgba(0, 82, 183, 1);
+    background-color: rgba(0, 82, 183, .9);
 }
 
 .quote-banner {
@@ -69,9 +116,14 @@
   padding-bottom: 500px;
 }
 
-body {
-  height: 1400px;
+.home body {
+  height: 1800px;
 }
+
+body {
+  padding-bottom: 200px;
+}
+
 h3 {
     color:lightgoldenrodyellow;
     text-align:center;
@@ -124,50 +176,72 @@ h2 {
     text-align: center;
     font-family: 'Architects Daughter', cursive;
 }
-.motivate{
+.motivate {
     height: 300px;
     position: relative;
-    background-image: url(https://i1.wp.com/www.society19.com/wp-content/uploads/2020/06/10-Inspirational-Quotes-That-Will-Give-You-The-Motivation-You-Need-Featured-Image.png?fit=1024%2C768&ssl=1);
+    background-image: url("../images/motivate-banner6.jpg");
+    background-size: cover;
 }
-.motivate-panel{
+.motivate-panel {
     padding: 25px;
     min-height: 300px;
 }
-.no-margin{
+.no-margin {
     margin:0px;
 }
-.mp1{
+.mp1 {
     background-color:turquoise;
 }
-.mp2{
-    background-image:url(https://pbs.twimg.com/profile_images/770758699027750912/Nt4EDtW8.jpg);
+.mp2 {
+    background-image: url("../images/motivate-body3.jpg");
     background-size: cover;
     background-repeat:no-repeat;
 }
-.mp3{
+.mp3 {
     background-color: violet;
 }
-.mp4{
+.mp4 {
     background-color: lightgreen;
 }
-.picktheme{
+.picktheme {
     margin-top:40px;
 }
-.mptext{
+.mptext {
     margin:0;
 }
-.center{
+.center {
     text-align: left;
     margin: auto;
     display: table;}
-.submit{
+.submit {
     position:absolute;
     text-align:center;
     padding:10px;
     width: 25%;
     /* background-color: darkorange;  */
     background-color: darkorchid;
-    color: lightgoldenrodyellow; 
+    color: lightgoldenrodyellow;
     transition-duration: 0.4s;
     border:none;
+}
+.faceplate{
+    height: 300px;
+    position: relative;
+    background-image:url(frida.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+textarea{
+    border-radius: 5px;
+    background-color:rgb(128, 230, 248);
+    border:none;
+}
+form{
+    padding-bottom:100px;
+}
+select{
+    border-radius: 5px;
+    background-color:rgb(128, 230, 248);
+    border:none;
+    margin-bottom:2px;
 }

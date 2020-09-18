@@ -27,6 +27,24 @@ $(document).ready(() => {
   //   });
   // }
 
+  $("#subBtn").on("click", (event) => {
+    const newBlurb = {
+      blurb: $("#blurbEntry").val().trim(),
+      author: $("authorEntry").val().trim(),
+      topic: $("topicSelect").val(),
+    };
+    const genreSelect = $("genreSelect").val();
+    $.ajax(`/api/${genreSelect}`, {
+      type: "POST",
+      data: newBlurb,
+    }).then(
+      () => {
+        console.log("created new entry");
+        location.reload();
+      },
+    );
+  });
+
   $("#motivateBtn").on("click", (event) => {
     console.log("This motivate button is working.");
     $.get("/motivate", () => {
