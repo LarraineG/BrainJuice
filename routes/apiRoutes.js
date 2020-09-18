@@ -12,6 +12,7 @@ module.exports = (app) => {
   app.get('/motivate', (req, res) => {
     db.Motivate.findAll({})
       .then((result) => {
+        console.log(result);
         res.render('motivation', { data: result });
       });
   });
