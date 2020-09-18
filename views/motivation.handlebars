@@ -49,7 +49,7 @@
     <script>
         $.get("/genre/Motivate")
         .then((data)=>{
-            let laughData = data.filter(obj => obj.topic === "Laugh");
+            let laughData = data.filter(obj => obj.topic === "Laugh" || obj.topic === "Joke");
             let listenData = data.filter(obj => obj.topic === "Listen");
             let inspirationData = data.filter(obj => obj.topic === "Inspiration");
 
