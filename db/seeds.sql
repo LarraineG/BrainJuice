@@ -1,4 +1,4 @@
-INSERT INTO humor (blurb, author, topic) 
+INSERT INTO humors (blurb, author, topic) 
 VALUES ("Without requirements or design, programming is the art of adding bugs to an empty text file.", "Louis Srygley", "Inspiration"),
 ("Before software can be reusable it first has to be usable.", "Ralph Johnson", "Inspiration"),
 ("There are two ways to write error-free programs; only the third one works.", "Alan J. Perlis", "Inspiration"),
@@ -15,7 +15,7 @@ VALUES ("Without requirements or design, programming is the art of adding bugs t
 ("The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.", "Seymour Cray", "Inspiration"),
 ("Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.", "Mosher’s Law of Software Engineering", "Inspiration");
 
-INSERT INTO humor(blurb, topic) 
+INSERT INTO humors(blurb, topic) 
 VALUES("Just open another credit card; it’s free money.","Listen"),
 ("If you see a bear and don’t have time to run away, hug it. Bears cannot scratch their stomachs.","Listen"),
 ("Trust me. You can dance.","Listen"),
