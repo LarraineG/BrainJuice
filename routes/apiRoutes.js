@@ -52,6 +52,7 @@ module.exports = (app) => {
 
     db[genreTable].create(req.body)
       .then((result) => {
+        console.log(result);
         res.json(result);
       })
       .catch((err) => {

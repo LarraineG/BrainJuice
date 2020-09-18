@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,8 @@
 
 </head>
 <body> --}}
+=======
+>>>>>>> e0d7a44c6e154b101d4a668ea85fe6b294356082
     <div class="motivate">
         <h1 class="head">Motivation</h1>
     </div>
@@ -18,18 +21,18 @@
         <div class="row no-margin">
             <div class="col-sm-6 motivate-panel mp1">
                 <h2 class=mptext>INSPIRATION</h3>
-                <h3>I wish you could still smoke in Denny's so I could puff on some black and mild's while eating my grand slam.</h3>
+                <h3 id="inspirationQuote"></h3>
             </div>
             <div class="col-sm-6 motivate-panel mp2">
                 <h3></h3>
             </div>
             <div class="col-sm-6 motivate-panel mp3">
                 <h2 class=mptext>LAUGH</h3>
-                <h3>My mom is cool. My mom will treat you right.</h3>
+                <h3 id="laughQuote"></h3>
             </div>
             <div class="col-sm-6 motivate-panel mp4">
                 <h2 class=mptext>LISTEN</h3>
-                <h3>"I've said many, many, many unkind things about Philadelphia, and I meant every one." -David Lynch</h3>
+                <h3 id="listenQuote"></h3>
             </div>
         </div>
     <!-- </div> -->
@@ -40,7 +43,7 @@
             <select id="genreSelect" name="Genre">
                 <option value="Motivate">Motivate</option>
                 <option value="Humor">Humor</option>
-                <option value="Revelation">Revelation</option>
+                <option value="Surprise">Revelation</option>
             </select>
             <br>
             <label for="topicSelect">Topic</label>
@@ -50,13 +53,32 @@
                 <option value="Laugh">Laugh</option>
                 <option value="Listen">Listen</option>
             </select>
-            <br>
-            <textarea id="blurbEntry" name="blurb" rows="4" cols="50" placeholder="Your post here"></textarea>
-            <br>
-            <textarea id=authorEntry name="author"  cols="50"placeholder="your name here"></textarea>
-            <br>
-            <button type="submit-form" class="submit">Submit</button>
+            </div>
+            <div class="form-group">
+            <textarea class="form-control" id="blurbEntry" name="blurb" rows="4" cols="50" placeholder="Please write your post here."></textarea>
+            </div>
+            <div class="form-group">
+            <textarea class="form-control" id="authorEntry" name="author"  cols="50"placeholder="Author name goes here."></textarea>
+            </div>
+            <button id="subBtn" type="submit-form" class="submit">Submit</button>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-{{!-- </body>
-</html> --}}
+    <script>
+        $.get("/genre/Motivate")
+        .then((data)=>{
+            let laughData = data.filter(obj => obj.topic === "Laugh");
+            let listenData = data.filter(obj => obj.topic === "Listen");
+            let inspirationData = data.filter(obj => obj.topic === "Inspiration");
+
+            let i = Math.floor(Math.random() * listenData.length);
+            let x = Math.floor(Math.random() * laughData.length);
+            let y = Math.floor(Math.random() * inspirationData.length)
+
+            $("#listenQuote").text(listenData[i].blurb + " -"+ listenData[i].author);
+            $("#laughQuote").text(laughData[x].blurb  + " -"+ laughData[x].author);
+            $("#inspirationQuote").text(inspirationData[y].blurb + " -"+ inspirationData[y].author);
+        })
+        .catch((err)=>{
+            if (err) throw err;
+        })
+    </script>
