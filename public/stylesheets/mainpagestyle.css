@@ -6,8 +6,8 @@
     height: 95vh;
     position: relative;
     transition: background .25s linear;
-
 }
+
 .home-banner::before {
   left: 0;
   background-image: url("../images/zigzaglines2.jpg");
@@ -21,7 +21,6 @@
   opacity: 1;
   transition: background .5s linear;
   z-index: -5;
-
 }
 
 .brain-div {
@@ -32,6 +31,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .brain-text {
   width: 100%;
   color: #FFF;
@@ -42,7 +42,6 @@
 .brain {
   max-width: 125px;
 }
-
 
 .break {
   flex-basis: 100%;
@@ -177,46 +176,44 @@ h2 {
     text-align: center;
     font-family: 'Architects Daughter', cursive;
 }
-.motivate{
+.motivate {
     height: 300px;
     position: relative;
-    /* background-image: url(https://i1.wp.com/www.society19.com/wp-content/uploads/2020/06/10-Inspirational-Quotes-That-Will-Give-You-The-Motivation-You-Need-Featured-Image.png?fit=1024%2C768&ssl=1); */
     background-image: url("../images/motivate-banner6.jpg");
     background-size: cover;
 }
-.motivate-panel{
+.motivate-panel {
     padding: 25px;
     min-height: 300px;
 }
-.no-margin{
+.no-margin {
     margin:0px;
 }
-.mp1{
+.mp1 {
     background-color:turquoise;
 }
-.mp2{
-    /* background-image:url(https://pbs.twimg.com/profile_images/770758699027750912/Nt4EDtW8.jpg); */
+.mp2 {
     background-image: url("../images/motivate-body3.jpg");
     background-size: cover;
     background-repeat:no-repeat;
 }
-.mp3{
+.mp3 {
     background-color: violet;
 }
-.mp4{
+.mp4 {
     background-color: lightgreen;
 }
-.picktheme{
+.picktheme {
     margin-top:40px;
 }
-.mptext{
+.mptext {
     margin:0;
 }
-.center{
+.center {
     text-align: left;
     margin: auto;
     display: table;}
-.submit{
+.submit {
     position:absolute;
     text-align:center;
     padding:10px;
