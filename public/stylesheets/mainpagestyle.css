@@ -224,3 +224,24 @@ h2 {
     transition-duration: 0.4s;
     border:none;
 }
+.faceplate{
+    height: 300px;
+    position: relative;
+    background-image:url(frida.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+textarea{
+    border-radius: 5px;
+    background-color:rgb(128, 230, 248);
+    border:none;
+}
+form{
+    padding-bottom:100px;
+}
+select{
+    border-radius: 5px;
+    background-color:rgb(128, 230, 248);
+    border:none;
+    margin-bottom:2px;
+}
