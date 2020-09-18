@@ -224,13 +224,7 @@ h2 {
     transition-duration: 0.4s;
     border:none;
 }
-.faceplate{
-    height: 300px;
-    position: relative;
-    background-image:url(frida.png);
-    background-size: cover;
-    background-repeat:no-repeat;
-}
+
 textarea{
     border-radius: 5px;
     background-color:rgb(128, 230, 248);
@@ -244,4 +238,20 @@ select{
     background-color:rgb(128, 230, 248);
     border:none;
     margin-bottom:2px;
+}
+.greatquote{
+    margin-left:30%;
+    margin-right:5%;
+    
+}
+.faceplate{
+    height: 350px;
+    position: relative;
+    background-image:url(https://i.imgur.com/X0t0wxN.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-color:black;
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
