@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "npm run lint",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
     "watch": "nodemon server.js"
@@ -14,10 +14,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@divyanshu013/inspirational-quotes": "^1.0.1",
+    "asciiart-logo": "^0.2.6",
     "bcryptjs": "2.4.3",
+    "dotenv": "^8.2.0",
     "express": "^4.17.0",
+    "express-handlebars": "^5.1.0",
     "express-session": "^1.16.1",
+    "inspirational-quotes": "^1.0.8",
     "mysql2": "^1.6.5",
+    "nodemon": "^2.0.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^5.8.6"
@@ -26,8 +32,10 @@
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
     "cross-env": "^5.2.0",
-    "eslint": "^4.19.1",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"

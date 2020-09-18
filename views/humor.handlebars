@@ -1,0 +1,67 @@
+<div class="motivate">
+        <h1 class="head">Humor</h1>
+    </div>
+    <!-- <div class="container"> -->
+        <div class="row no-margin">
+            <div class="col-sm-6 motivate-panel mp1">
+                <h2 class=mptext>INSPIRATION</h3>
+                <h3 id="inspiration2Quote"></h3>
+            </div>
+            <div class="col-sm-6 motivate-panel mp2">
+                <h3></h3>
+            </div>
+            <div class="col-sm-6 motivate-panel mp3">
+                <h2 class=mptext>LAUGH</h3>
+                <h3 id="laugh2Quote"></h3>
+            </div>
+            <div class="col-sm-6 motivate-panel mp4">
+                <h2 class=mptext>LISTEN</h3>
+                <h3 id="listen2Quote"></h3>
+            </div>
+        </div>
+    <!-- </div> -->
+    <h2>Inspire Someone</h2>
+    <form class="center">
+            <label for="genreSelect">Genre</label>
+            <br>
+            <select id="genreSelect" name="Genre">
+                <option value="Motivate">Motivate</option>
+                <option value="Humor">Humor</option>
+            </select>
+            <br>
+            <label for="topicSelect">Topic</label>
+            <br>
+            <select id="topicSelect" name="Topic" [margin-top: 30px];>
+                <option value="Inspiration">Inspiration</option>
+                <option value="Laugh">Laugh</option>
+                <option value="Listen">Listen</option>
+            </select>
+            </div>
+            <div class="form-group">
+            <textarea class="form-control" id="blurbEntry" name="blurb" rows="4" cols="50" placeholder="Please write your post here."></textarea>
+            </div>
+            <div class="form-group">
+            <textarea class="form-control" id="authorEntry" name="author"  cols="50"placeholder="Author name goes here."></textarea>
+            </div>
+            <button id="subBtn" type="submit-form" class="submit">Submit</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        $.get("/genre/Humor")
+        .then((data)=>{
+            let laughData = data.filter(obj => obj.topic === "Laugh");
+            let listenData = data.filter(obj => obj.topic === "Listen");
+            let inspirationData = data.filter(obj => obj.topic === "Inspiration");
+
+            let i = Math.floor(Math.random() * listenData.length);
+            let x = Math.floor(Math.random() * laughData.length);
+            let y = Math.floor(Math.random() * inspirationData.length)
+
+            $("#listen2Quote").text(listenData[i].blurb + " -"+ listenData[i].author);
+            $("#laugh2Quote").text(laughData[x].blurb  + " -"+ laughData[x].author);
+            $("#inspiration2Quote").text(inspirationData[y].blurb + " -"+ inspirationData[y].author);
+        })
+        .catch((err)=>{
+            if (err) throw err;
+        })
+    </script>

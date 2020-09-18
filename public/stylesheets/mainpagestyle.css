@@ -1,0 +1,252 @@
+.home-banner {
+    background-color: rgba(220, 162, 220, .9);
+    background-blend-mode: multiply;
+    height: 95vh;
+    position: relative;
+    transition: background .25s linear;
+}
+
+.home-banner::before {
+  left: 0;
+  background-image: url("../images/zigzaglines2.jpg");
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: background .5s linear;
+  z-index: -5;
+}
+
+.ml15 {
+    font-weight: 800;
+    font-size: 10vw;
+    letter-spacing: 0.25em;
+}
+
+.ml15 .word {
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+/* .firstline {
+    font-size: 130%;
+}
+@media all and (max-width: 1000px) {
+  .ml15 {
+    font-size: 5em;
+  }
+} */
+
+.brain-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.brain-text {
+  width: 100%;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 50pt;
+  text-align: center;
+}
+.brain {
+  max-width: 125px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.home-banner h1 {
+    text-align: center;
+    color: lightgoldenrodyellow;
+    text-shadow: 4px 4px 4px rgba(89, 1, 92, .25);
+    font-family: 'Monoton', cursive;
+    font-family: 'Saira Stencil One', cursive;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+/* HOMEPAGE BANNER TRANSITION 1 >> LAUGH */
+.ml15.heroSwitch { /* Gets added to the H1 */
+    /* font-size: 12em; */
+    font-size: 17vw;
+    letter-spacing: .25em;
+    font-family: 'Lobster', cursive;
+    text-transform: initial;
+}
+.home-banner.bannerSwitch { /* Gets added to the Header  Tag */
+  background-color: rgba(226, 185, 21, .9);
+}
+
+/* HOMEPAGE BANNER TRANSITION 2 >> RELAX */
+.ml15.heroSwitch2 { /* Gets added to the H1 */
+    font-family: 'Shadows Into Light', cursive;
+    text-transform: uppercase;
+}
+.home-banner.bannerSwitch2 { /* Gets added to the Header  Tag */
+    background-color: rgba(0, 82, 183, .9);
+}
+
+.quote-banner {
+    /* background-color:orange; */
+    background-color: turquoise;
+}
+.quote-banner .container {
+  min-height: 1000px !important;
+  padding-bottom: 500px;
+}
+
+.home body {
+  height: 1800px;
+}
+
+body {
+  padding-bottom: 200px;
+}
+
+h3 {
+    color: lightgoldenrodyellow;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.head {
+    text-align: center;
+    color:lightgoldenrodyellow;
+    text-shadow: 4px 4px 4px rgb(89, 1, 92);
+    font-family: 'Tangerine', serif;
+    font-size: 80px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+body {
+    background-color: rgb(247, 247, 126);
+}
+.pipe {
+    position:absolute;
+    text-align:center;
+    padding:10px;
+    width: 70%;
+    left: 15%;
+    /* background-color: darkorange;  */
+    background-color: darkorchid;
+    color: lightgoldenrodyellow;
+    transition-duration: 0.4s;
+    border:none;
+}
+.pipe:hover {
+    /* background-color:darkred; */
+    background-color: darkmagenta;
+    transform: scale(1.2);
+    /* padding:20px;
+    width:75%;
+    left:12.5%; */
+}
+.row {
+    margin-top: 60px;
+}
+h2 {
+    margin-top:40px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+}
+.motivate {
+    height: 300px;
+    position: relative;
+    background-image: url("../images/motivate-banner6.jpg");
+    background-size: cover;
+}
+.motivate-panel {
+    padding: 25px;
+    min-height: 300px;
+}
+.no-margin {
+    margin: 0px;
+}
+.mp1 {
+    background-color: turquoise;
+}
+.mp2 {
+    background-image: url("../images/motivate-body3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mp3 {
+    background-color: violet;
+}
+.mp4 {
+    background-color: lightgreen;
+}
+.picktheme {
+    margin-top: 40px;
+}
+.mptext {
+    margin:0;
+}
+.center {
+    text-align: left;
+    margin: auto;
+    display: table;}
+.submit {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    /* background-color: darkorange;  */
+    background-color: darkorchid;
+    color: lightgoldenrodyellow;
+    transition-duration: 0.4s;
+    border: none;
+}
+
+textarea{
+    border-radius: 5px;
+    background-color: rgb(128, 230, 248);
+    border:none;
+}
+form {
+    padding-bottom: 100px;
+}
+select {
+    border-radius: 5px;
+    background-color: rgb(128, 230, 248);
+    border:none;
+    margin-bottom:2px;
+}
+.greatquote{
+    margin-left:30%;
+    margin-right:5%;
+    
+}
+.faceplate{
+    height: 350px;
+    position: relative;
+    background-image:url(https://i.imgur.com/X0t0wxN.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-color:black;
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
