@@ -1,22 +1,22 @@
-    <div class="motivate">
-        <h1 class="head">Motivation</h1>
+<div class="motivate">
+        <h1 class="head">Humor</h1>
     </div>
     <!-- <div class="container"> -->
         <div class="row no-margin">
             <div class="col-sm-6 motivate-panel mp1">
                 <h2 class=mptext>INSPIRATION</h3>
-                <h3 id="inspirationQuote"></h3>
+                <h3 id="inspiration2Quote"></h3>
             </div>
             <div class="col-sm-6 motivate-panel mp2">
                 <h3></h3>
             </div>
             <div class="col-sm-6 motivate-panel mp3">
                 <h2 class=mptext>LAUGH</h3>
-                <h3 id="laughQuote"></h3>
+                <h3 id="laugh2Quote"></h3>
             </div>
             <div class="col-sm-6 motivate-panel mp4">
                 <h2 class=mptext>LISTEN</h3>
-                <h3 id="listenQuote"></h3>
+                <h3 id="listen2Quote"></h3>
             </div>
         </div>
     <!-- </div> -->
@@ -47,7 +47,7 @@
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>
-        $.get("/genre/Motivate")
+        $.get("/genre/Humor")
         .then((data)=>{
             let laughData = data.filter(obj => obj.topic === "Laugh");
             let listenData = data.filter(obj => obj.topic === "Listen");
@@ -57,9 +57,9 @@
             let x = Math.floor(Math.random() * laughData.length);
             let y = Math.floor(Math.random() * inspirationData.length)
 
-            $("#listenQuote").text(listenData[i].blurb + " -"+ listenData[i].author);
-            $("#laughQuote").text(laughData[x].blurb  + " -"+ laughData[x].author);
-            $("#inspirationQuote").text(inspirationData[y].blurb + " -"+ inspirationData[y].author);
+            $("#listen2Quote").text(listenData[i].blurb + " -"+ listenData[i].author);
+            $("#laugh2Quote").text(laughData[x].blurb  + " -"+ laughData[x].author);
+            $("#inspiration2Quote").text(inspirationData[y].blurb + " -"+ inspirationData[y].author);
         })
         .catch((err)=>{
             if (err) throw err;
