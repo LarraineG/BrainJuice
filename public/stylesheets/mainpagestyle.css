@@ -180,7 +180,9 @@ h2 {
 .motivate{
     height: 300px;
     position: relative;
-    background-image: url(https://i1.wp.com/www.society19.com/wp-content/uploads/2020/06/10-Inspirational-Quotes-That-Will-Give-You-The-Motivation-You-Need-Featured-Image.png?fit=1024%2C768&ssl=1);
+    /* background-image: url(https://i1.wp.com/www.society19.com/wp-content/uploads/2020/06/10-Inspirational-Quotes-That-Will-Give-You-The-Motivation-You-Need-Featured-Image.png?fit=1024%2C768&ssl=1); */
+    background-image: url("../images/motivate-banner6.jpg");
+    background-size: cover;
 }
 .motivate-panel{
     padding: 25px;
@@ -193,7 +195,8 @@ h2 {
     background-color:turquoise;
 }
 .mp2{
-    background-image:url(https://pbs.twimg.com/profile_images/770758699027750912/Nt4EDtW8.jpg);
+    /* background-image:url(https://pbs.twimg.com/profile_images/770758699027750912/Nt4EDtW8.jpg); */
+    background-image: url("../images/motivate-body3.jpg");
     background-size: cover;
     background-repeat:no-repeat;
 }
