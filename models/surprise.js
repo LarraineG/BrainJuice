@@ -3,11 +3,11 @@ module.exports = function (sequelize, DataTypes) {
         blurb: { // The text
             type: DataTypes.TEXT
         },
-        author: { //By who
+        author: { // By who
             type: DataTypes.STRING,
             defaultValue: "Unknown"
         },
-        topic: { //Inspire, Laugh, Listen(Advice)
+        topic: { // Inspire, Laugh, Listen(Advice)
             type: DataTypes.STRING
         }
     },{
@@ -15,6 +15,5 @@ module.exports = function (sequelize, DataTypes) {
         createAt: false,
         updatedAt: false
     });
-
     return Surprise;
 }
