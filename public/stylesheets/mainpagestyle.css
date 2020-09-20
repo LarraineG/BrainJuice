@@ -279,3 +279,14 @@ select {
     background-size: cover;
     background-repeat: no-repeat;
 }
+#topicSelect{
+    margin-bottom: 20px;
+}
+#surpriseBtn{
+    color:rgb(247, 247, 126);
+    background-color: rgb(247, 247, 126);
+}
+#surpriseBtn:hover{
+    background-color: darkmagenta;
+    transform: scale(1.2);
+}
