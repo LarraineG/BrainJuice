@@ -250,3 +250,43 @@ select {
   justify-content: center;
   flex-direction: column;
 }
+.hp2 {
+    background-image: url("https://media.istockphoto.com/photos/primeval-caveman-wearing-animal-skin-holds-bone-and-hits-rock-with-it-picture-id1194512942?k=6&m=1194512942&s=612x612&w=0&h=cMKYSucjgPwIx3q8I8zEaG7a-uTzHmxI5kHf1gTid-k=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.humor {
+    height: 300px;
+    position: relative;
+    background-image: url("https://i.imgur.com/elr1IjA.png");
+    background-size: cover;
+}
+.h-head {
+    text-align: center;
+    color:black;
+    text-shadow: 4px 4px 4px rgb(39, 39, 39);
+    font-family: 'Tangerine', serif;
+    font-size: 80px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.sp2 {
+    background-image: url("https://pbs.twimg.com/profile_images/770758699027750912/Nt4EDtW8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#topicSelect{
+    margin-bottom: 20px;
+}
+#surpriseBtn{
+    color:rgb(247, 247, 126);
+    background-color: rgb(247, 247, 126);
+}
+#surpriseBtn:hover{
+    background-color: darkmagenta;
+    transform: scale(1.2);
+}
