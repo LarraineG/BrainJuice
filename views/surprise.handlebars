@@ -10,12 +10,56 @@
             </div>
         </div>
     <script type="text/javascript">
-        var breadfacts=["Google fatal insomnia disorder.","There is a spider that turns into a wheel and rolls away when it is in danger."];
-        var greatArray=[{name:"Oscar Wilde",imgUrl:"https://i.imgur.com/X0t0wxN.png"},{name:"Frida Kahlo",imgUrl:"https://i.imgur.com/zveF2oM.png"}];
-        var quotes=["I'm a big believer in spirit animals. I think I'm three worms.","You know how atheletes sometimes carry around huge jugs of water? I do the same thing but with a ziploc bag full of grape jelly.","2012 was years ago did we ever catch Kony?"];
+        var breadfacts=["Google fatal insomnia disorder.",
+        "There is a spider that turns into a wheel and rolls away when it is in danger.",
+        "Your cellphone has 10 times more bacteria on it than the average public restroom.",
+        "One-third of murders go unsolved in the United States.",
+        "We all have teeny tiny mites living on our eyelashes.",
+        "A sting from the japanese hornet can cause kidney failure.",
+        "In the 1800's dentures were made from human teeth"];
+        var greatArray=[{name:"Oscar Wilde",imgUrl:"https://i.imgur.com/X0t0wxN.png"},
+        {name:"Frida Kahlo",imgUrl:"https://i.imgur.com/zveF2oM.png"},
+        {name:"Werner Herzog",imgUrl:"https://i.imgur.com/5YKOtlZ.png"},
+        {name:"Shigeru Miyamoto",imgUrl:"https://i.imgur.com/7RNeTcw.png"},
+        {name:"Martin Scorsese",imgUrl:"https://i.imgur.com/j4JoHBW.png"},
+        {name:"Hayao Miyazaki",imgUrl:"https://i.imgur.com/YXKNZcd.png"},
+        {name:"Teddy Roosevelt",imgUrl:"https://i.imgur.com/HL5xc1g.png"},
+        {name:"Oda Nobunaga",imgUrl:"https://i.imgur.com/SrIOsWG.png"},
+        {name:"George S. Patton",imgUrl:"https://i.imgur.com/ECJW7mR.png"},
+        {name:"Salvador Dali",imgUrl:"https://i.imgur.com/XqQShLU.png"},
+        {name:"Mahatma Gandhi",imgUrl:"https://imgur.com/gn1IOvr.png"},
+        {name:"John Waters",imgUrl:"https://i.imgur.com/JZCpaoY.png"}];
+        var quotes=[("I wish you could still smoke in Denny's so I could puff on some black and mild's while eating my grand slam."),
+("I've said many, many, many unkind things about Philadelphia, and I meant every one."),
+("My mom is cool. My mom will treat you right."),
+("Nuts!"),
+("Learn French? No there's nobody in France I want to talk to."),
+("By Allah, behave yourself or I will give you a taste of my shoe."),
+("毒食わば皿まで (どく くわば さら まで"),
+("Look, I don't want to sound like a hater but if you like RWBY, you're worth less than a real person."),
+("You know I don't think I've ever seen any evidence that Mario is actually a plumber. We're just told that he is and we accept it like sheep."),
+("The only reason a warrior is alive is to fight, and the only reason a warrior fights is to win. Otherwise, why be a warrior? It is easier to count beads."),
+("No, I haven't watched Game of Thrones, stop asking me about it."),
+("I'm a 100% straight dude but Legolas is hot. I really don't like how hot they made him."),
+("I mean part of the beauty of me is that I'm very rich."),
+("I've never even met Jennifer Aniston."),
+("2012 was years ago did we ever catch Kony?"),
+("You got the 'with pulp' kind. I like the juice that says 'some pulp'."),
+("Yeah, no I don't ever vote."),
+("I was in the Alvin and the Chipmunks movie, which was a real bucket list item."),
+("Smoking weed is not a personality. I need you people to understand this."),
+("You always hear people complaining when their zippers are broken, but do you ever hear anyone thanking their zippers when they work?"),
+("I hated school. They looked me in the eyes and told me the three states of matter were solids, liquids, and gasses as if Jello doesn't even exist."),
+("I've always been a go-getter. For instance, I never just lick an envelope-I like the whole letter, the mailbox, and the mail truck."),
+("My mother taught me that you should always cover your mouth when you die. You don't want to spread germs."),
+("Dogs are a lot smarter than we give them credit for. For example, dogs pee on fire hydrants. I was almost 30 before I thought to do that."),
+("You know how atheletes sometimes carry around huge jugs of water? I do the same thing but with a ziploc bag full of grape jelly."),
+("When I throw a football I just pretend it's a baby, and imagine it needs to get tossed right into the arms of the receiver to get rocked to sleep. And I pretend it's a good baby, too, not like baby Hitler or some other evil baby that I ought to spike into the ground to prevent a great calamity in the future."),
+("I'm a big believer in spirit animals. I think I'm three worms."),
+("Trash economy. You use cubes of trash as money. Everybody becomes rich, it’s a gold rush.")];
         var person=greatArray[Math.floor(Math.random()*greatArray.length)];
         var content=quotes[Math.floor(Math.random()*quotes.length)];
         $("#greatquotetext").text("\""+content+"\" -"+person.name);
         $("#greatFace").css("background-image","url("+person.imgUrl+")");
-        $("#loafquote").text(breadfacts[Math.floor(Math.random()*breadfacts.length)]);
+        $("#loafquote").text(breadfacts[Math.floor(Math.random()*breadfacts.length)]+" So says the Almighty Loaf.");
     </script>
