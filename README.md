@@ -4,6 +4,13 @@
 
 Brain Juice is an application for students, those in creative fields, employees, writers, or anyone that may be experiencing burnout or mental fatigue to access a happy place for relaxation and revitalizing their minds.
 
+## View Application:
+
+* [The URL of the deployed application](https://brainjuicing.herokuapp.com/)
+* [The URL of the GitHub repository](https://github.com/LarraineG/Project2)
+
+<img src="./assets/brain-juice-app.png" alt="brain juice application">
+
 ## Walkthrough
 
 The application features inspiration quotes, jokes, advice, bold and colorful graphics to get your brain juices going. Then the user is prompted to select a theme for what they need based on the mood they're feeling at that time.
@@ -13,13 +20,6 @@ The application features inspiration quotes, jokes, advice, bold and colorful gr
 * The hidden "Easter egg", called "Give Me Revelation" can be found as well to take them to a page of surprises and misattributed quotes to spark creativity.
 
 After selecting a theme, the user will be taken to another section of the application to experience different forms of inspiration quotes, advice or jokes based on the theme they selected. Additionally, the database is set up so that anyone could post their own content, allowing this application to constantly be refreshed and renewed with updated content for people to enjoy.
-
-## View Application:
-
-* [The URL of the deployed application](https://brainjuicing.herokuapp.com/)
-* [The URL of the GitHub repository](https://github.com/LarraineG/Project2)
-
-<img src="./assets/brain-juice-app.png" alt="brain juice application">
 
 ## Requirements
 
